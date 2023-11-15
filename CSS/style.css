@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #776B5D;
+    background-color: #F3EEEA;
+}
+
+#home .container{
+    background:linear-gradient(to right, #EBE3D5 0%, #EBE3D5 70%, #B0A695 70%, #B0A695 100%);
+    height: 49rem;
+}
+
+#about .container{
+    height: 45rem;
+}
