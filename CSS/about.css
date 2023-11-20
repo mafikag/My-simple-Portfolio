@@ -1,0 +1,219 @@
+#about .container{
+    display: grid;
+    height: 48.8rem;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas:
+        'teks avatar'
+    ;
+}
+
+.teks{
+    grid-area: teks;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+    text-align: justify;
+}
+
+.teks h2{
+    content:'';
+    width: 125px;
+    height: 40px;
+    border-bottom: 2px solid #776B5D;
+    margin-bottom: 10px;
+}
+
+.teks p{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teks #hide{
+    display: none;
+    margin-top: 0.5em;
+    height: 2em;
+    width: 8em;
+    border-radius: 20px;
+    background-color: #776B5D;
+    color: #F3EEEA;
+    z-index: 10;
+}
+
+.teks #show{
+    display: none;
+    margin-top: 0.5em;
+    height: 2em;
+    width: 6em;
+    border-radius: 20px;
+    background-color: #776B5D;
+    color: #F3EEEA;
+    z-index: 10;
+}
+
+.line-btn{
+    position: relative;
+    top: 22px;
+    display: none;
+    width: 300px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #776B5D;
+}
+
+.logo-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10rem;
+    margin-top: 2rem;
+}
+
+.avatar-about{
+    grid-area: avatar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-about img{
+    border-radius: 20px;
+    width: 45%;
+    transition: all 0.3s ease;
+}
+
+.logo-about img:hover{
+    box-shadow: 2px 2px 0.5px #000;
+    margin-left: -1%;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.item svg{
+    height: 3em;
+}
+
+.item:first-child a:hover{
+    background-color: #fff;
+    fill: url(#grad-java);
+    box-shadow: 1px 1px 0.5px #000;
+}
+
+.item:nth-child(2) a:hover{
+    background-color: #fff;
+    fill:#000;
+    box-shadow: 1px 1px 0.5px #000;
+}
+
+
+@media (max-width:1020px){
+    #about .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'avatar'
+        'teks'
+        ;
+    }
+
+    .teks{
+        margin-left: 0%;
+        align-items: center;
+    }
+
+    .teks p{
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    #merge{
+        margin-left: 2%;
+    }
+
+    .logo-about{
+        margin-right: 0rem;
+        margin-top: 6.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo-about img{
+        width: 30%;
+    }
+
+    .item svg{
+        height: 2.5em;
+    }
+
+    .item a{
+        width: 2.8em;
+        height: 2.8em;
+    }
+}
+
+@media (max-width:590px){
+    #about .container{
+        align-items: start;
+        grid-template-rows: 0.5fr;
+    }
+
+    .logo-about{
+        align-self:flex-end ;
+    }
+
+    .logo-about img{
+        width: 40%;
+    }
+
+    .item svg{
+        height: 2em;
+    }
+
+    .item a{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .hide p{
+        display: -webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
+    }
+
+    .hide.off p{
+        -webkit-line-clamp: unset;
+    }
+
+    .btn{
+        display: flex;
+    }
+
+    .teks #show{
+        display: block;
+    }
+
+    .line-btn{
+        display: block;
+    }
+}

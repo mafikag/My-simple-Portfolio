@@ -1,13 +1,15 @@
 #home .container{
+    background: url(../src/background.jpg);
+    background-size:cover;
     display: grid;
-    height: 48.8rem;
+    height: 49.2rem;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
 }
 
 .content-home{
     display: grid;
-    color: #000;
+    color: whitesmoke;
     justify-content: center;
 }
 
@@ -23,7 +25,8 @@
 
 .content-home p:nth-child(3){
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    max-width: 30rem;
 }
 
 .button{
@@ -46,21 +49,20 @@
 .hero img{
     width: 45%;
     border:5px solid;
-    border-color: color-mix(in srgb, #B0A695 60%, #EBE3D5 40%);
+    border-color: #ddd;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .hero img:hover{
-    box-shadow: 2px 2px 1px #000;
+    box-shadow: 2px 2px 0.5px #000;
     margin-left: -1%;
 }
 
-@media (max-width: 930px){
+@media (max-width: 850px){
     #home .container{
         grid-template-columns: 1fr;
         align-content: center;
-        justify-items: center;
         row-gap: 35px;
     }
 
@@ -79,7 +81,8 @@
     }
 
     .content-home p:nth-child(3){
-        font-size: 1.2em;
+        font-size: 1.1em;
+        max-width: 25.5rem;
     }
 
     .content-home .button{
@@ -111,5 +114,6 @@
 
     .content-home p:nth-child(3){
         font-size: 1em;
+        max-width: 19.5rem;
     }
 }
