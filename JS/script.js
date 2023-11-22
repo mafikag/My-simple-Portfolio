@@ -1,6 +1,7 @@
 let show = document.getElementById("show");
 let hide = document.getElementById("hide");
 let text = document.querySelectorAll("div.hide");
+let section = document.querySelector("#about .container");
 
 function Show() {
   show.style.display = "none";
@@ -8,6 +9,7 @@ function Show() {
   text.forEach((item) => {
     item.classList.add("off");
   });
+  section.style.height = "50rem";
 }
 
 function Hide() {
@@ -16,4 +18,5 @@ function Hide() {
   text.forEach((item) => {
     item.classList.remove("off");
   });
+  section.style.height = "33rem";
 }

@@ -1,0 +1,44 @@
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    background-color: #776B5D;
+}
+
+.icon-sosmed{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0.7rem;
+}
+
+.icon-sosmed a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150, 149, 149, 0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-instagram{
+    background: radial-gradient(circle at top right,#c208bc 50% ,#e80707 50% ,#f0ba32 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-linkedin{
+    color: #206ef5;
+}
+
+.icon-sosmed a:hover{
+    transform: scale(1.2);
+}

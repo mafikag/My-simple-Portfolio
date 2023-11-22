@@ -16,7 +16,3 @@ body{
     background:linear-gradient(to right, #EBE3D5 0%, #EBE3D5 70%, #B0A695 70%, #B0A695 100%);
     font-size: 18px;
 }
-
-#skill .container{
-    height: 45rem;
-}

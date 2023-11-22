@@ -1,0 +1,146 @@
+#portfolio .container{
+    display: grid;
+    grid-template-rows:0.2fr;
+    align-items: end;
+    margin-left: 9%;
+    margin-bottom: 2rem;
+}
+
+.content-port{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-port{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-bottom: 1.5em;
+}
+
+.title-port h3{
+    font-size: 3em;
+    font-weight: 400;
+    justify-self:start;
+}
+
+.title-port h3::after{
+    content:'';
+    display: block;
+    width: 295px;
+    border-bottom: 2px solid #776B5D;
+    margin-bottom: 10px;
+}
+
+.title-port p{
+    font-size: 0.9em;
+}
+
+.project-port{
+    display: flex;
+    gap: 9rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(212, 202, 189);
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 19.8rem;
+    height: 11rem;
+    object-position: 0px 0px;
+    object-fit:contain;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icon{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 0.7rem;
+    padding-left: 10px;
+}
+
+.card-text{
+    padding-left: 10px;
+}
+
+.fa-brands{
+    width: 2rem;
+    font-size: 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.check-btn{
+    width: 14rem;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    align-self:center ;
+    transition: all 0.3s ease-in-out;
+}
+
+.check-btn a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.fa-html5:hover{
+    color: #e66525;
+}
+.fa-css3-alt:hover{
+    color: #254ee6;
+}
+.fa-js:hover{
+    color: #e6dc25;
+}
+
+.check-btn:hover{
+    width: 14.5rem;
+    background-color: rgba(201, 201, 201, 0.5);
+}
+
+.card:last-child{
+    background-color: rgba(70, 70, 70, 0.8);
+    justify-content: center;
+    font-size: 2.5em;
+    color: rgb(206, 199, 199);
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+@media (max-width: 1020px){
+    #portfolio .container{
+        margin-left: 0%;
+    }
+
+    .title-port{
+        align-items: center;
+    }
+
+    .project-port{
+        justify-content: center;
+        gap: 4rem;
+    }
+}

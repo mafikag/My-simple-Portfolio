@@ -3,19 +3,22 @@
     background-size:cover;
     display: grid;
     height: 49.2rem;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
-}
-
-.content-home{
-    display: grid;
-    color: whitesmoke;
     justify-content: center;
 }
 
+.content-home{
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .content-home p:first-child{
-    font-weight: 600;
     font-size: 1.5em;
+    font-weight: 600;
 }
 
 .content-home p:nth-child(2){
@@ -24,55 +27,39 @@
 }
 
 .content-home p:nth-child(3){
-    font-weight: 400;
     font-size: 1.3em;
-    max-width: 30rem;
+    font-weight: 400;
+}
+
+.content-home .button{
+    justify-self: center;
 }
 
 .button{
-    width: fit-content;
+    width: 12em;
     height: fit-content;
     padding: 10px 10px;
     margin-top: 10px;
     border-radius: 15px;
-    background-color: #B0A695;
-    box-shadow: 1px 1px 2px #000;
+    background-color: transparent;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.3s ease-in-out;
 }
 
 .button a{
     text-decoration: none;
-    font-size: 20px;
-    color: #000;
+    font-size: 18px;
+    color: whitesmoke;
     font-weight: 600;
 }
 
-.hero img{
-    width: 45%;
-    border:5px solid;
-    border-color: #ddd;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.hero img:hover{
-    box-shadow: 2px 2px 0.5px #000;
-    margin-left: -1%;
+.button:hover{
+    width: 13em;
+    background-color: rgba(201, 201, 201, 0.4);
 }
 
 @media (max-width: 850px){
-    #home .container{
-        grid-template-columns: 1fr;
-        align-content: center;
-        row-gap: 35px;
-    }
-
-    .content-home{
-        order:2;
-        justify-items: center;
-    }
-
     .content-home p:first-child{
-        justify-self: start;
         font-size: 1em;
     }
 
@@ -82,28 +69,10 @@
 
     .content-home p:nth-child(3){
         font-size: 1.1em;
-        max-width: 25.5rem;
-    }
-
-    .content-home .button{
-        justify-self: center;
-    }
-
-    .hero{
-        display: flex;
-        justify-content: center;
-    }
-
-    .hero img{
-        width: 30%;
     }
 }
 
 @media (max-width: 500px){
-    .hero{
-        display: none;
-    }
-
     .content-home p:first-child{
         font-size: 1.1em;
     }
@@ -114,6 +83,5 @@
 
     .content-home p:nth-child(3){
         font-size: 1em;
-        max-width: 19.5rem;
     }
 }
