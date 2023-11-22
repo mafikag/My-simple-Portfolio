@@ -57,8 +57,7 @@
 }
 
 .card-body{
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 .card img{
@@ -94,7 +93,8 @@
     padding: 8px;
     border-radius: 5px;
     background-color: transparent;
-    align-self:center ;
+    align-self: center;
+    justify-self: center;
     transition: all 0.3s ease-in-out;
 }
 
