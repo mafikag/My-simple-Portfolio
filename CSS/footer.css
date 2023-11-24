@@ -35,10 +35,6 @@ footer .container{
     color: black;
 }
 
-.fa-linkedin{
-    color: #206ef5;
-}
-
 .icon-sosmed a:hover{
     transform: scale(1.2);
 }
